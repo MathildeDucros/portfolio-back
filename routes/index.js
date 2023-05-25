@@ -36,7 +36,9 @@ router.post("/", (req, res) => {
       });
 
       newTestimonial.save().then((newDoc) => {
-        res.json({ result: true, data: Testimonial });
+        res
+          .status(200)
+          .json({ result: true, message: "Données enregistrées avec succès" });
       });
     } else {
       // User already exists in database
