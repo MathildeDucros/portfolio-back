@@ -28,7 +28,7 @@ router.post("/", (req, res) => {
   Testimonial.findOne({ name: req.body.name }).then((data) => {
     if (data === null) {
       const newTestimonial = new Testimonial({
-        commentaire: req.body.commentaire,
+        testimonial: req.body.testimonial,
         name: req.body.name,
         designation: req.body.designation,
         company: req.body.company,

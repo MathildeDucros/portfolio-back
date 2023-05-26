@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const testimonialSchema = mongoose.Schema({
-  commentaire: String,
+  testimonial: String,
   name: String,
   designation: String,
   company: String,
